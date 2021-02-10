@@ -1,0 +1,12 @@
+<form [formGroup]="form" (ngSubmit)="submit()" id="my-form">
+    <p id="service-variable">{{serviceVariable}}</p>
+    <div>
+        <input type="email"  formControlName="email" id="email"/>
+        <input type="password" formControlName="password" id="pass" />
+    </div>
+    <div>
+        <button type="submit" id="sub">submit</button>
+    </div>
+    <br/>
+    <p id="message">{{message}}</p>
+</form>
